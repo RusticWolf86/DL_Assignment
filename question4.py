@@ -50,7 +50,7 @@ num_epochs = 10
 learning_rate = 0.001
 
 # Initialize CSV writer
-with open('model_metrics.csv', mode='w', newline='') as file:
+with open('metrics.csv', mode='w', newline='') as file:
     writer = csv.writer(file)
     writer.writerow(['Model', 'Test Accuracy', 'Precision', 'Recall', 'F1-score'])
 
@@ -133,4 +133,4 @@ with open('model_metrics.csv', mode='w', newline='') as file:
         print("--------------------------------------------------")
         print()
 
-print("Output saved to model_metrics.csv")
+print("Output saved to metrics.csv")
